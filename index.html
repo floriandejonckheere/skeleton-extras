@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Skeleton Extras</title>
+
+    <meta charset="utf-8">
+    <meta name="description" content="A set of UI components built on Skeleton">
+    <meta name="author" content="Florian Dejonckheere">
+
+    <link rel="stylesheet" type="text/css" href="Skeleton/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="Skeleton/css/skeleton.css">
+
+    <!-- Font Awesome is needed for the checkbox icon -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="skeleton-extras.css">
+
+    <!-- showcase page style -->
+    <style type="text/css">
+      .container {
+        margin-top: 3em;
+      }
+
+      h1, h2, h3, h4, h5, h5 {
+        margin-top: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Skeleton Extras</h1>
+      <p>
+        Skeleton Extras is a set of UI components built on Skeleton. It aims to provide simple to use responsive components that are not bloated with unnecessary features.
+      </p>
+      <p>
+        Features:
+        <ul>
+          <li><code>disabled</code> class for disabling elements</li>
+          <li>Checkboxes and radio buttons</li>
+          <li>Badges</li>
+          <li>Alerts</li>
+        </ul>
+      </p>
+      <h3>Components</h3>
+      <h5>Buttons</h5>
+      <p>
+        <a href="javascript:void(0);" class="button button-primary">Primary</a>
+        <button class="button">Button</button>
+        <button class="button"><i class="fa fa-shopping-cart"></i> Icon button</button>
+        <button class="button" disabled>Disabled button</button>
+      </p>
+
+      <h5>Checkboxes and radio buttons</h5>
+      <div class="row">
+        <div class="six columns">
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-enabled">
+            <label for="checkbox-enabled">Regular checkbox</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-checked" checked>
+            <label for="checkbox-checked">Checked checkbox</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-disabled" disabled>
+            <label for="checkbox-disabled">Disabled checkbox</label>
+          </div>
+
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox-checked-disabled" checked disabled>
+            <label for="checkbox-checked-disabled">Checked disabled checkbox</label>
+          </div>
+        </div>
+        <div class="six columns">
+          <label>
+            <input type="radio" />
+            Regular radio button
+          </label>
+
+          <label>
+            <input type="radio" checked />
+            Checked radio button
+          </label>
+
+          <label>
+            <input type="radio" disabled />
+            Disabled radio button
+          </label>
+        </div>
+      </div>
+
+      <h5>Badges</h5>
+      <p>
+        This is a sample text <span class="badge"></span>
+      </p>
+    </div>
+  </body>
+</html>

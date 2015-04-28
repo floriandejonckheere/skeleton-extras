@@ -1,0 +1,70 @@
+/**
+ * skeleton-extras.css - A set of UI components built on Skeleton
+ *
+ * Florian Dejonckheere <florian@floriandejonckheere.be>
+ *
+ * */
+
+/**
+ * Disabled
+ *
+ * */
+.disabled, .disabled:hover, .disabled:active, .disabled:visited, .disabled:link,
+[disabled], [disabled]:hover, [disabled]:active, [disabled]:visited, [disabled]:link {
+  color: #D1D1D1;
+  border-color: #D1D1D1;
+  cursor: not-allowed;
+}
+
+/**
+ * Checkbox
+ *
+ * */
+.checkbox label {
+  display: inline-block;
+  position: relative;
+  padding-left: 22px;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label:before {
+  content: "";
+  display: inline-block;
+
+  width: 14px;
+  height: 14px;
+
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #33C3F0;
+}
+
+/* checked checkbox */
+.checkbox input[type="checkbox"]:checked + label:before {
+  font-family: 'FontAwesome';
+  content: "\f00c";
+  text-align: center;
+  line-height: 14px;
+}
+
+/* disabled checkbox */
+.checkbox input[type="checkbox"][disabled] + label:before,
+.checkbox input[type="checkbox"].disabled + label:before {
+  color: #D1D1D1;
+  background-color: #F7F7F7;
+  border-color: #D1D1D1;
+  cursor: not-allowed;
+}
+
+/**
+ * Radio button
+ *
+ * */
