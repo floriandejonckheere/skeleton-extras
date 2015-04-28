@@ -6,6 +6,17 @@
  * */
 
 /**
+ * Colour
+ *
+ * */
+.default-color,
+.badge,
+.alert {
+  background-color: #33C3F0;
+  color: white;
+}
+
+/**
  * Disabled elements
  *
  * */
@@ -80,10 +91,35 @@
 
 /* checked radio button */
 .radio input[type="radio"]:checked + label:before {
-  background: #33C3F0;
+  background-color: #33C3F0;
 }
 
 .radio input[type="radio"][disabled]:checked + label:before,
 .radio input[type="radio"].disabled:checked + label:before {
   background-color: #D1D1D1;
+}
+
+/**
+ * Badge
+ *
+ * */
+.badge {
+  padding: .2rem .4rem;
+  margin: .5rem;
+  border-radius: 4px;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/**
+ * Alert
+ *
+ * */
+.alert {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
