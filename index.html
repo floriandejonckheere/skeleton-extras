@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href="skeleton-extras.css">
 
-    <!-- showcase page style -->
+    <!-- Custom page style -->
     <style type="text/css">
       .container {
         margin-top: 3em;
@@ -30,23 +30,28 @@
     <div class="container">
       <h1>Skeleton Extras</h1>
       <p>
-        Skeleton Extras is a set of UI components built on Skeleton. It aims to provide simple to use responsive components that are not bloated with unnecessary features.
+        Skeleton Extras is a set of UI components built on Skeleton. It aims to provide simple to use responsive components that are not bloated with unnecessary features. Please note that there is (currently) no guarantee these components will work across multiple operating systems or browsers.
+      </p>
+      <p>
+        View the <a href="https://github.com/floriandejonckheere/skeleton-extras/blob/master/index.html">source code</a> of this file for annotated usage of the components.
       </p>
       <p>
         Features:
         <ul>
-          <li><code>disabled</code> class for disabling elements</li>
+          <li>Disabled elements</li>
           <li>Checkboxes and radio buttons</li>
           <li>Badges</li>
           <li>Alerts</li>
         </ul>
       </p>
-      <h3>Components</h3>
+      <h3>Showcase</h3>
       <h5>Buttons</h5>
+      <p>Primary, regular and icon buttons are already available in Skeleton.</p>
       <p>
         <a href="javascript:void(0);" class="button button-primary">Primary</a>
         <button class="button">Button</button>
         <button class="button"><i class="fa fa-shopping-cart"></i> Icon button</button>
+        <!-- Use the 'disabled' attribute or add the 'disabled' class -->
         <button class="button" disabled>Disabled button</button>
       </p>
 
@@ -74,26 +79,31 @@
           </div>
         </div>
         <div class="six columns">
-          <label>
-            <input type="radio" />
-            Regular radio button
-          </label>
+          <div class="radio">
+            <input type="radio" id="radio-enabled">
+            <label for="radio-enabled">Regular radio button</label> (<a href="javascript:void(0);" onClick="document.getElementById('radio-enabled').checked = false;">uncheck</a>)
+          </div>
 
-          <label>
-            <input type="radio" checked />
-            Checked radio button
-          </label>
+          <div class="radio">
+            <input type="radio" id="radio-checked" checked>
+            <label for="radio-checked">Checked radio button</label>
+          </div>
 
-          <label>
-            <input type="radio" disabled />
-            Disabled radio button
-          </label>
+          <div class="radio">
+            <input type="radio" id="radio-disabled" disabled>
+            <label for="radio-disabled">Disabled radio button</label>
+          </div>
+
+          <div class="radio">
+            <input type="radio" id="radio-checked-disabled" checked disabled>
+            <label for="radio-checked-disabled">Checked disabled radio button</label>
+          </div>
         </div>
       </div>
 
       <h5>Badges</h5>
       <p>
-        This is a sample text <span class="badge"></span>
+        This is a sample text <span class="badge">new</span>
       </p>
     </div>
   </body>
