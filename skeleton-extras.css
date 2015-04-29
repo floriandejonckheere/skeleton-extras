@@ -183,6 +183,65 @@
 }
 
 /**
+ * Range
+ *
+ * */
+input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* You cannot group -webkit and -moz styles, an invalid selector invalidates
+ * the entire block of properties */
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 5px;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  height: 16px;
+  width: 16px;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  -moz-appearance: none;
+
+  height: 16px;
+  width: 16px;
+  background: white;
+  border: 1px solid #D1D1D1;
+  border-radius: 50%;
+  margin-top: -6px;
+}
+
+input[type="range"]:active::-webkit-slider-thumb {
+  border: 1px solid #33C3F0;
+}
+
+input[type="range"]:active::-moz-range-thumb {
+  border: 1px solid #33C3F0;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/**
  * Badge
  *
  * */

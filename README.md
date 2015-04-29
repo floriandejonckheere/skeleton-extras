@@ -10,11 +10,13 @@ Current features:
 - Checkboxes
 - Radio buttons
 - Toggle switches
+- Range slider
 - Badges
 - Alerts
 
 Planned features:
 
 - Numerical, email, date input
+- Progress bar
 - Possibly a navbar
 - Possibly modals
