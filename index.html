@@ -7,17 +7,23 @@
     <meta name="description" content="A set of UI components built on Skeleton">
     <meta name="author" content="Florian Dejonckheere">
 
-    <link rel="stylesheet" type="text/css" href="Skeleton/css/normalize.css">
+    <!-- Skeleton stylesheet -->
     <link rel="stylesheet" type="text/css" href="Skeleton/css/skeleton.css">
 
-    <!-- Font Awesome is needed for the checkbox icon -->
+    <!-- Font Awesome is needed for several icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+    <!-- Skeleton Extras -->
     <link rel="stylesheet" type="text/css" href="skeleton-extras.css">
-    <!-- Optional: if you want animated components -->
+
+    <!-- Optional: animated components -->
     <link rel="stylesheet" type="text/css" href="skeleton-animations.css">
 
-    <!-- Custom page style -->
+    <!-- Optional: JavaScript interactions (dismissable alerts) -->
+    <script type="text/JavaScript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/JavaScript" src="skeleton-extras.js"></script>
+
+    <!-- Custom page styles and scripts -->
     <style type="text/css">
       .container {
         margin-top: 3em;
@@ -27,6 +33,12 @@
         margin-top: 2em;
       }
     </style>
+    <script type="text/JavaScript">
+      $(document).ready(function() {
+        $('#range-horiz').on('input', function() { $('#range-vert').val(this.value); });
+        $('#range-vert').on('input', function() { $('#range-horiz').val(this.value); });
+      });
+    </script>
   </head>
   <body>
     <div class="container">
@@ -127,7 +139,9 @@
       <h5>Range</h5>
       <div class="row">
         <div class="twelve columns">
-          <input type="range" min="0" max="100">
+          <input type="range" min="0" max="100" id="range-horiz">
+          <!-- Add the 'vertical' class for vertical range sliders -->
+          <input type="range" min="0" max="100" class="vertical" id="range-vert">
         </div>
       </div>
 
@@ -140,8 +154,14 @@
 
       <h5>Alerts</h5>
       <p>
-        <div class="alert">This is an alert. It informs the user that there is something requiring his attention.</div>
-        <div class="alert" style="background-color: red;">Defining custom colors is up to you.</div>
+        <div class="alert">
+          This is an alert. It informs the user that there is something requiring his attention.
+          <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
+        </div>
+        <div class="alert" style="background-color: red;">
+          Defining custom colors is up to you. You can dismiss this alert by clicking on the close button.
+          <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
+        </div>
       </p>
     </div>
   </body>

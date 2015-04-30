@@ -16,6 +16,7 @@ Current features:
 
 Planned features:
 
+- Animations
 - Numerical, email, date input
 - Progress bar
 - Possibly a navbar

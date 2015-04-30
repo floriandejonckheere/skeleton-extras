@@ -241,6 +241,10 @@ input[type="range"]:focus {
   outline: none;
 }
 
+input[type="range"].vertical {
+  transform: rotate(270deg);
+}
+
 /**
  * Badge
  *
@@ -264,4 +268,8 @@ input[type="range"]:focus {
   border-radius: 4px;
   margin-bottom: 1rem;
   box-sizing: border-box;
+}
+
+.alert [data-toggle="dismiss"] {
+  color: white;
 }
