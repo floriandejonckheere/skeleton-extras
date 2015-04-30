@@ -1,0 +1,29 @@
+{
+  "name": "skeleton-extras",
+  "main": "skeleton-extras.css",
+  "version": "0.0.1",
+  "authors": [
+    "Florian Dejonckheere <florian@floriandejonckheere.be>"
+  ],
+  "description": "A set of UI components built on Skeleton",
+  "keywords": [
+    "skeleton",
+    "css",
+    "ui",
+    "components"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/floriandejonckheere/skeleton-extras",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "skeleton": "~2.0.4",
+    "jquery": "~2.1.4",
+    "font-awesome": "~4.3.0"
+  }
+}
