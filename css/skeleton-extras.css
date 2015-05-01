@@ -53,8 +53,10 @@
 
 .checkbox label:before,
 .radio label:before {
-  content: "";
   display: inline-block;
+  font-family: 'FontAwesome';
+  text-align: center;
+  line-height: 14px;
 
   width: 14px;
   height: 14px;
@@ -66,15 +68,16 @@
   border: 1px solid #CCC;
   border-radius: 4px;
   background-color: #fff;
-  color: #33C3F0;
+  color: white;
+}
+
+.checkbox label:before {
+  content: "\f00c";
 }
 
 /* checked checkbox */
 .checkbox input[type="checkbox"]:checked ~ label:before {
-  font-family: 'FontAwesome';
-  content: "\f00c";
-  text-align: center;
-  line-height: 14px;
+  color: #33C3F0;
 }
 
 /* disabled checkbox */
@@ -85,6 +88,7 @@
 
 
 .radio label:before {
+  content: "";
   border-radius: 50%;
 
   -webkit-box-shadow: inset 0 0 0 3px white;
@@ -111,8 +115,8 @@
 }
 
 .switch .switch-button,
-.switch .switch-button:before,
-.switch .switch-button:after {
+.switch label:before,
+.switch label:after {
   position: absolute;
   display: inline-block;
 
@@ -125,11 +129,10 @@
   background-color: white;
 }
 
-.switch .switch-button:before,
-.switch .switch-button:after {
+.switch label:before,
+.switch label:after {
   z-index: -1;
 
-  top: -1px;
   left: auto;
 
   font-size: 11px;
@@ -137,29 +140,21 @@
   text-align: center;
 }
 
-.switch .switch-button:before {
+.switch label:before {
   content: "ON";
-  left: -30px;
-  padding-right: 5px;
+  left: 0;
+  border-radius: 4px 0 0 4px;
 
   background-color: #33C3F0;
   color: white;
 }
 
-.switch .switch-button:after {
+.switch label:after {
   content: "OFF";
-  right: -30px;
-  padding-left: 5px;
+  left: 30px;
+  border-radius: 0 4px 4px 0;
 
   background-color: #D3D3D3;
-}
-
-.switch input[type="checkbox"]:checked ~ .switch-button:after {
-  opacity: 0;
-}
-
-.switch input[type="checkbox"]:not(:checked) ~ .switch-button:before {
-  opacity: 0;
 }
 
 /* checked switch */
@@ -168,10 +163,10 @@
 }
 
 /* disabled switch */
-.switch input[type="checkbox"][disabled] ~ .switch-button:before,
-.switch input[type="checkbox"].disabled ~ .switch-button:before,
-.switch input[type="checkbox"][disabled] ~ .switch-button:after,
-.switch input[type="checkbox"].disabled ~ .switch-button:after {
+.switch input[type="checkbox"][disabled] ~ label:before,
+.switch input[type="checkbox"].disabled ~ label:before,
+.switch input[type="checkbox"][disabled] ~ label:after,
+.switch input[type="checkbox"].disabled ~ label:after {
   background-color: #D3D3D3;
   color: #AAA;
 }

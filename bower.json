@@ -1,8 +1,13 @@
 {
   "name": "skeleton-extras",
   "main": "skeleton-extras.css",
-  "version": "0.0.1",
-  "authors": [
+  "version": "0.0.2",
+  "main": [
+    "css/skeleton-extras.css",
+    "css/skeleton-animations.css",
+    "js/skeleton-extras.js"
+  ],
+  "author":
     "Florian Dejonckheere <florian@floriandejonckheere.be>"
   ],
   "description": "A set of UI components built on Skeleton",
