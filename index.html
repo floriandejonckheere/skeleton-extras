@@ -29,7 +29,7 @@
         margin-top: 3em;
       }
 
-      h1, h2, h3, h4, h5, h5 {
+      .title {
         margin-top: 2em;
       }
     </style>
@@ -51,7 +51,7 @@
       </p>
 
       <h3>Showcase</h3>
-      <h5>Buttons</h5>
+      <h5 class="title">Buttons</h5>
       <p>Primary, regular and icon buttons are already available in Skeleton.</p>
       <p>
         <a href="javascript:void(0);" class="button button-primary">Primary</a>
@@ -61,7 +61,7 @@
         <button class="button" disabled>Disabled button</button>
       </p>
 
-      <h5>Checkboxes and radio buttons</h5>
+      <h5 class="title">Checkboxes and radio buttons</h5>
       <div class="row">
         <div class="six columns">
           <div class="checkbox">
@@ -107,7 +107,7 @@
         </div>
       </div>
 
-      <h5>Switches</h5>
+      <h5 class="title">Switches</h5>
       <div class="row">
         <div class="twelve columns">
           <div class="switch">
@@ -136,7 +136,7 @@
         </div>
       </div>
 
-      <h5>Range</h5>
+      <h5 class="title">Range</h5>
       <div class="row">
         <div class="twelve columns">
           <input type="range" min="0" max="100" id="range-horiz">
@@ -145,14 +145,14 @@
         </div>
       </div>
 
-      <h5>Badges</h5>
+      <h5 class="title">Badges</h5>
       <p>
         Badges indicate extra attributes<span class="badge">new</span>
         <br>
         Custom colors on demand<span class="badge" style="background-color: red; vertical-align: super;">hot</span>
       </p>
 
-      <h5>Alerts</h5>
+      <h5 class="title">Alerts</h5>
       <p>
         <div class="alert">
           This is an alert. It informs the user that there is something requiring his attention.
@@ -163,6 +163,58 @@
           <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
         </div>
       </p>
+
+      <h5 class="title">Panels</h5>
+      <div class="row">
+        <div class="six columns">
+          <div class="panel">
+            <div class="row">
+              <div class="twelve columns">
+                This is a panel. You can put text, images, forms and many other elements in here. This text only serves to fill the space a bit.
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="six columns">
+                <a href="javascript:void(0);" class="button button-primary" style="width: 100%;">Accept</a>
+              </div>
+              <div class="six columns">
+                <a href="javascript:void(0);" class="button" style="width: 100%;">Reject</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="panel">
+            <div class="row">
+              <div class="twelve columns">
+                <h5>Sign in to continue</h5>
+                <div class="alert" style="background: red;">
+                  Invalid username or password
+                  <span class="pull-right"><a href="javascript:void(0);" data-toggle="dismiss"><i class="fa fa-close"></i></a></span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <label for="username">Username</label>
+                <input type="text" class="u-full-width" placeholder="Username" id="username" name="username">
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <label for="password">Password</label>
+                <input type="password" class="u-full-width" placeholder="Password" id="password" name="password">
+              </div>
+            </div>
+            <div class="row">
+              <div class="twelve columns">
+                <input type="button" class="button button-primary" value="Sign in">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

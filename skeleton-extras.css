@@ -273,3 +273,16 @@ input[type="range"].vertical {
 .alert [data-toggle="dismiss"] {
   color: white;
 }
+
+/**
+ * Panel
+ *
+ * */
+.panel {
+  padding: 2rem 2rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  background: white;
+}

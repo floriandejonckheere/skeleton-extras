@@ -13,11 +13,11 @@ Current features:
 - Range slider
 - Badges
 - Alerts
+- Panels
 
 Planned features:
 
 - Animations
-- Numerical, email, date input
 - Progress bar
 - Possibly a navbar
 - Possibly modals
