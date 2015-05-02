@@ -7,7 +7,7 @@
     "css/skeleton-animations.css",
     "js/skeleton-extras.js"
   ],
-  "author":
+  "author": [
     "Florian Dejonckheere <florian@floriandejonckheere.be>"
   ],
   "description": "A set of UI components built on Skeleton",
