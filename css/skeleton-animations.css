@@ -9,6 +9,7 @@
 .checkbox label:before,
 .radio label:before,
 .alert,
+.input,
 .switch .switch-button {
   transition: all 0.1s ease-in-out;
   -webkit-transition: all 0.1s ease-in-out;
