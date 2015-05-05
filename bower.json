@@ -1,7 +1,7 @@
 {
   "name": "skeleton-extras",
   "main": "skeleton-extras.css",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "main": [
     "css/skeleton-extras.css",
     "css/skeleton-animations.css",
