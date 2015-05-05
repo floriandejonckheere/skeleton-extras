@@ -300,7 +300,12 @@ select::-ms-expand {
     display: none;
 }
 
+label.select {
+  display: inline;
+}
+
 label.select:after {
+  color: #333;
   margin-left: -27.5px;
   content: "\f0d7";
   font-family: 'FontAwesome';
